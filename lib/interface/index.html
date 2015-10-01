@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+    <style>
+      li.done { text-decoration: line-through; }
+    </style>
+  </head>
+  <body>
+    <div id="demo">
+      <h1>{{title | uppercase}}</h1>
+      <ul>
+        <li v-repeat="todos" @click="done = !done" class="{{done ? 'done' : ''}}">
+          {{content}}
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
